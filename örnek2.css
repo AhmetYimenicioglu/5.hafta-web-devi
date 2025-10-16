@@ -1,0 +1,65 @@
+@charset "utf-8"; /* Bu satır, karakter setini belirtir */
+
+body {
+    margin: 0;
+    font-family: sans-serif;
+    font-size: 14px;
+}
+
+/* Menü Wrapper stili */
+#menu-wrapper ul {
+    padding: 0;
+    list-style: none;
+}
+
+/* Menü öğeleri */
+#menu-wrapper > ul > li {
+    display: inline-block;
+    position: relative;
+}
+
+/* Menü bağlantıları */
+#menu-wrapper a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+    padding: 10px 5px;
+    display: block;
+    width: 90px;
+    text-align: center;
+    background: #333;
+}
+
+/* Menü öğesinin hover efekti */
+#menu-wrapper a:hover {
+    background: #a3cd39;
+    text-shadow: 0 0 2px #000;
+}
+
+/* Alt menü (sub-menu) stili */
+#menu-wrapper li ul {
+    display: none;
+    background: #333;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 130px;
+}
+
+/* Alt menü bağlantıları */
+#menu-wrapper li ul li a {
+    padding: 10px 5px;
+    width: 100%;
+    display: block;
+    text-align: left;
+}
+
+/* Alt menüde hover efekti */
+#menu-wrapper li ul li a:hover {
+    background: #a3cd39;
+}
+
+/* Menü öğesi üzerine gelindiğinde alt menüyü göstermek */
+#menu-wrapper li:hover ul {
+    display: block;
+}
