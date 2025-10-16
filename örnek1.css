@@ -1,0 +1,65 @@
+/* Genel stil */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 0;
+}
+
+/* Menü stili */
+#nav {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    background-color: #333;
+    overflow: hidden;
+    width: 100%;
+}
+
+#nav li {
+    float: left;
+    position: relative;
+}
+
+#nav li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 20px;
+    text-decoration: none;
+}
+
+#nav li a:hover {
+    background-color: #111;
+}
+
+/* "current" sınıfı için stil (aktif sayfa) */
+#nav li.current a {
+    background-color: #4CAF50;
+}
+
+/* Dropdown menü stili */
+#nav li ul {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    background-color: #333;
+}
+
+#nav li:hover ul {
+    display: block;
+}
+
+/* Alt menü item'lerinin stilleri */
+#nav li ul li a {
+    padding: 12px 16px;
+}
+
+/* Hover durumunda alt menü item'inin arka planı */
+#nav li ul li a:hover {
+    background-color: #111;
+}
